@@ -1,0 +1,12 @@
+services:
+
+  db:
+    image: ghusta/postgres-world-db:2.10
+    restart: always
+    ports:
+      - 20555:5432
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
